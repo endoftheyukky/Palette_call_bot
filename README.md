@@ -1,6 +1,3 @@
-### READMEファイルの更新
-
-```markdown
 # Discord Voice State Bot
 
 このDiscord Botは、特定のボイスチャンネルでユーザーの入退室を監視し、通話の開始と終了を通知します。このプログラムはGoogle Cloud Platform (GCP) の Google Compute Engine (GCE) 上で実行されており、Google Cloud Shellを使用してすべての設定とデプロイを完結させます。
