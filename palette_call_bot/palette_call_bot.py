@@ -12,7 +12,9 @@ call_start_times = {}
 
 @client.event
 async def on_voice_state_update(member, before, after):
+    # 通話開始・終了の通知を送信するチャンネルのID
     botRoom = client.get_channel(00000)
+    # 通話開始・終了を監視するチャンネルのID
     announceChannelIds = [00001, 00002, 00003, 00004, 00005]
 
     # タイムゾーン設定
