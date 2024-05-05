@@ -10,7 +10,7 @@
 
 ## 環境
 
-このBotはGoogle Cloud PlatformのCompute Engineインスタンス上で実行されています。以下はそのセットアッププロセスです：
+このBotはGoogle Cloud PlatformのCompute Engineインスタンス上で実行されています。以下はそのセットアッププロセスです。
 
 ### GCEでの設定
 
