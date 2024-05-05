@@ -13,9 +13,9 @@ call_start_times = {}
 @client.event
 async def on_voice_state_update(member, before, after):
     # 通話開始・終了の通知を送信するチャンネルのID
-    botRoom = client.get_channel(00000)
+    botRoom = client.get_channel('YOUR_BOT_ROOM_ID')
     # 通話開始・終了を監視するチャンネルのID
-    announceChannelIds = [00001, 00002, 00003, 00004, 00005]
+    announceChannelIds = ['YOUR_ANNOUNCE_CHANNEL_ID1', 'YOUR_ANNOUNCE_CHANNEL_ID2', 'YOUR_ANNOUNCE_CHANNEL_ID3']
 
     # タイムゾーン設定
     jst = pytz.timezone('Asia/Tokyo')
@@ -46,4 +46,4 @@ async def on_voice_state_update(member, before, after):
             await botRoom.send(embed=embed)
 
 # Botのトークンを指定
-client.run("your_token_here")
+client.run("YOUR_DISCORD_BOT_TOKEN")
